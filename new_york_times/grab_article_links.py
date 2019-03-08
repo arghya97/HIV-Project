@@ -23,12 +23,11 @@ def load_page(driver):
         t+=1
         try:
             driver.find_element_by_xpath('//*[@id="site-content"]/div/div[2]/div[3]/div/button').click()
-            sleep(2)
+            sleep(5)
         except:
             found = False
-        print(t,end='\r')
+        print(t,end='')
     page = driver.page_source
-    driver.quit()
     return page
 def get_links(html):
     links = []
@@ -50,3 +49,4 @@ mod_links = modify_links(raw_links)
 
 with open('article_links.txt','w') as fl:
     fl.write('\n'.join(mod_links))
+driver.quit()
