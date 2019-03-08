@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup as bs
 from time import sleep
 
 def modify_links(links):
-    path = 'https://www.nytimes.com'
+    path = 'https://www.newsday.com'
     for i in range(len(links)):
         if links[i][0]=='/':
             links[i]= path+links[i]
