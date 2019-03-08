@@ -16,3 +16,7 @@ The articles of different news paper of North America region is scraped here
  * The `article_links.txt` file contains urls for all the articles
  * The `grab_articles_details.py` file collects the details of an article (like headline, date of publication, text etc.) based on the urls from `articles_links.txt`
  * The `newspaper.csv` file contains the details of all the articles in `csv` format.
+
+### Execution
+* Run the `grab_article_links.py` file first to collect the url of articles, this will generate the `article_links.txt` file
+* Then run the `grab_articles_details.py` file to collect the details of all the articles whose urls are in `article_links.txt` file, this will generate the `newspaper.csv` file conataining details of articles
